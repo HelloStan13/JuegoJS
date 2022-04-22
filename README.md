@@ -6,6 +6,9 @@
 jugador  1 teclas S arriba W abajo
 Jugador 2 fechas del teclado arriba y abajo
 
-![pinpong](https://user-images.githubusercontent.com/92740455/164751692-652b3414-ca7a-4381-90ce-8967fff3a8e9.png)
+## Juego Ping-Pong
+
+![pinpong](https://user-images.githubusercontent.com/92740455/164752683-8a58aeac-f4cd-437b-8c5e-f13a177daf34.png)
+
 
 Adryan Ynfante adryanynfante@gmail.com
