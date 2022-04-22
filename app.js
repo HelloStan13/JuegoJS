@@ -44,6 +44,7 @@
         this.speed= 20;
 
     }
+    //movimineto barras
     self.Bar.prototype ={
         down: function(){
             this.y += this.speed;
@@ -53,6 +54,21 @@
 
         },
     }
+})();
+//funciones elementos cuadrado y circulo para barras y pelota
+function draw (ctx, element){
+    switch (element.kind){
+        case "rectangle":
+            ctx.fillRect(element.x, element.y,element.width, element.height);
+            break;
+        case "circle":
+            ctx.beginPath();
+            ctx.arc(element.x,element.y, element.radius,0,7);
+            ctx.fill();
+            ctx.closePath();
+            break;
+    }
+}
 })();
 
 
