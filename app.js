@@ -20,3 +20,22 @@
         }
     }
 })();
+//funcion para dibujar todos los elementos en la vista
+(function(){
+    self.BoardView = function (canvas,board){
+        this.canvas= canvas;
+        this.canvas.width = board.width;
+        this.canvas.height = board.height;
+        this.board = board;
+        this.ctx = canvas.getContext("2d");
+    }
+
+})();
+
+var board = new Board(800,400);
+console.log(board);
+var bar = new Bar (20,150,10,100,board)
+var bar2 = new Bar (770,150,10,100,board)
+var canvas = document.getElementById('canvas');
+var board_view = new BoardView(canvas, board);
+var ball = new Ball(350,200,7,board);
