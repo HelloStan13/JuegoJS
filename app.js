@@ -31,7 +31,32 @@
     }
 
 })();
+//barras 
+(function(){
+    self.Bar = function(x,y,width,height,board){
+        this.x = x;
+        this.y = y;
+        this.width = width;
+        this.height = height;
+        this.board = board;
+        this.board.bars.push(this);
+        this.kind = "rectangle";
+        this.speed= 20;
 
+    }
+    self.Bar.prototype ={
+        down: function(){
+            this.y += this.speed;
+        },
+        up: function(){
+            this.y -= this.speed;
+
+        },
+    }
+})();
+
+
+//pintar pizarra en index canvas...
 var board = new Board(800,400);
 console.log(board);
 var bar = new Bar (20,150,10,100,board)
